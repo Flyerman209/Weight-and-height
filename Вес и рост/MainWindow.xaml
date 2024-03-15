@@ -1,0 +1,20 @@
+﻿<Window x:Class="Вес_и_рост.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Калькулятор Оптимального Веса" Height="300" Width="350">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Введите Рост (см):"/>
+            <TextBox x:Name="txtHeight" Margin="0 5 0 10" Width="100"/>
+            <TextBlock Text="Введите Вес (кг):"/>
+            <TextBox x:Name="txtWeight" Margin="0 5 0 10" Width="100"/>
+            <TextBlock Text="Выберите Пол:" Margin="0 5 0 5"/>
+            <StackPanel Orientation="Horizontal">
+                <RadioButton x:Name="rbMale" Content="Мужской" Margin="0 0 10 0"/>
+                <RadioButton x:Name="rbFemale" Content="Женский"/>
+            </StackPanel>
+            <Button Content="Рассчитать" Click="Calculate_Click" Width="100" Margin="0 10"/>
+            <TextBlock x:Name="txtResult"/>
+        </StackPanel>
+    </Grid>
+</Window>
